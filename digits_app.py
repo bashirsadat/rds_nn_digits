@@ -8,7 +8,7 @@ from PIL import Image
 import altair as alt
 import pandas as pd
 model = tf.keras.models.load_model('handwritten_digits.model')
-image = Image.open('logo.jpg')
+image = Image.open('logo.png')
 cola, colb, colc = st.columns([3,6,1])
 with cola:
     st.write("")
