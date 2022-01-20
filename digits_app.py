@@ -1,12 +1,9 @@
-import os
+
 import cv2
 import numpy as np
 import tensorflow as tf
-import matplotlib.pyplot as plt
 import streamlit as st
 from PIL import Image
-import altair as alt
-import pandas as pd
 model = tf.keras.models.load_model('handwritten_digits.model')
 image = Image.open('logo.png')
 cola, colb, colc = st.columns([3,6,1])
